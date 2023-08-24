@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76565395-B88E-4EFE-A094-E375DBB8FC17}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Training.modMain</StartupObject>
+    <RootNamespace>Training</RootNamespace>
+    <AssemblyName>Training</AssemblyName>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <ApplicationIcon>TECHNLGY.ICO</ApplicationIcon>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>http://localhost/Training/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Training.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Training.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.ADODB, Version=2.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Interop.ADODB.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ADOR, Version=2.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Interop.ADOR.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Feeds.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=44f7145607dad71b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Interop.Microsoft.Feeds.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Core, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Interop.Microsoft.Office.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Interop.Excel, Version=1.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Interop.Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.MSDataGridLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Interop.MSDataGridLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.VBIDE, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Interop.VBIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility.Data" />
+    <Reference Include="msdatasrc, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\msdatasrc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.Compatibility" />
+    <Import Include="Microsoft.VisualBasic.Compatibility.VB6" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmBaseData.Designer.vb">
+      <DependentUpon>FrmBaseData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBaseData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDefineUserBase.Designer.vb">
+      <DependentUpon>frmDefineUserBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDefineUserBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExamLineUpdateOP.Designer.vb">
+      <DependentUpon>frmExamLineUpdateOP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExamLineUpdateOP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExamOperator.Designer.vb">
+      <DependentUpon>frmExamOperator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExamOperator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExamOperatorUpdateName.Designer.vb">
+      <DependentUpon>frmExamOperatorUpdateName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExamOperatorUpdateName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExamOperatorUpdateOPID.Designer.vb">
+      <DependentUpon>frmExamOperatorUpdateOPID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExamOperatorUpdateOPID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExamResult.Designer.vb">
+      <DependentUpon>FrmExamResult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExamResult.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExamResultOPIDUpdate.Designer.vb">
+      <DependentUpon>frmExamResultOPIDUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExamResultOPIDUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExamSchedule.Designer.vb">
+      <DependentUpon>frmExamSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExamSchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExercise.designer.vb">
+      <DependentUpon>frmExercise.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExercise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGroupList.Designer.vb">
+      <DependentUpon>frmGroupList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGroupList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHRInfo.Designer.vb">
+      <DependentUpon>FrmHRInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHRInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMaintainPhoto.Designer.vb">
+      <DependentUpon>FrmMaintainPhoto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMaintainPhoto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOPExam.Designer.vb">
+      <DependentUpon>frmOPExam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOPExam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOpPracScore.Designer.vb">
+      <DependentUpon>frmOpPracScore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOpPracScore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPracticeList.designer.vb">
+      <DependentUpon>FrmPracticeList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPracticeList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelQuestionExam.Designer.vb">
+      <DependentUpon>frmSelQuestionExam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelQuestionExam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetPractice.Designer.vb">
+      <DependentUpon>frmSetPractice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetPractice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetQuestions.Designer.vb">
+      <DependentUpon>frmSetQuestions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetQuestions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUploadData.Designer.vb">
+      <DependentUpon>frmUploadData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUploadData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaintainExercise.Designer.vb">
+      <DependentUpon>frmMaintainExercise.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaintainExercise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExamResultUpdate.Designer.vb">
+      <DependentUpon>frmExamResultUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExamResultUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserConfig.Designer.vb">
+      <DependentUpon>frmUserConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserInput.Designer.vb">
+      <DependentUpon>FrmUserInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserRight.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserRight.Designer.vb">
+      <DependentUpon>frmUserRight.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\clsLvwItemComparer.vb" />
+    <Compile Include="modExcel.vb" />
+    <Compile Include="modMain.vb" />
+    <Compile Include="modPara.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmBaseData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBaseData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDefineUserBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDefineUserBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExamLineUpdateOP.resx">
+      <DependentUpon>frmExamLineUpdateOP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExamOperator.resx">
+      <DependentUpon>frmExamOperator.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExamOperatorUpdateName.resx">
+      <DependentUpon>frmExamOperatorUpdateName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExamOperatorUpdateOPID.resx">
+      <DependentUpon>frmExamOperatorUpdateOPID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExamResult.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmExamResult.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExamResultOPIDUpdate.resx">
+      <DependentUpon>frmExamResultOPIDUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExamSchedule.resx">
+      <DependentUpon>frmExamSchedule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExercise.resx">
+      <DependentUpon>frmExercise.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGroupList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGroupList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHRInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmHRInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaintainExercise.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMaintainExercise.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMaintainPhoto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMaintainPhoto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOPExam.resx">
+      <DependentUpon>frmOPExam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOpPracScore.resx">
+      <DependentUpon>frmOpPracScore.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPracticeList.resx">
+      <DependentUpon>FrmPracticeList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelQuestionExam.resx">
+      <DependentUpon>frmSelQuestionExam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetPractice.resx">
+      <DependentUpon>frmSetPractice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetQuestions.resx">
+      <DependentUpon>frmSetQuestions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUploadData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUploadData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExamResultUpdate.resx">
+      <DependentUpon>frmExamResultUpdate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserConfig.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUserConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserInput.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmUserInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserRight.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUserRight.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="StdFormat">
+      <Guid>{6B263850-900B-11D0-9484-00A0C91110ED}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TECHNLGY.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
